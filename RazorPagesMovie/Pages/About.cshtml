@@ -1,0 +1,38 @@
+@page
+@model RazorPagesMovie.Pages.AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <h2>About This Movie App</h2>
+    
+    <div style="margin-top: 30px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <p><strong>Project:</strong> RazorPagesMovie</p>
+        <p><strong>Student:</strong> Serena Achieng</p>
+        <p><strong>Student Number:</strong> ACHSER001</p>
+        <p><strong>Course:</strong> ASP.NET Workshop 2026</p>
+        <p><strong>Description:</strong> This is a movie management application built with ASP.NET Core Razor Pages. It allows users to create, read, update, and delete movie entries.</p>
+        
+        <hr style="margin: 20px 0;" />
+        
+        <h3>Features:</h3>
+        <ul>
+            <li>View list of movies</li>
+            <li>Add new movies with title, release date, genre, and price</li>
+            <li>Edit existing movie details</li>
+            <li>Delete movies from the database</li>
+            <li>Rating system for movies</li>
+        </ul>
+        
+        <hr style="margin: 20px 0;" />
+        
+        <p><em>This page was added as part of the Git branching workshop to demonstrate feature branches and pull requests.</em></p>
+        
+        <p style="margin-top: 30px;">
+            <strong>Last updated:</strong> @DateTime.Now.ToString("MMMM dd, yyyy")
+        </p>
+    </div>
+</div>
